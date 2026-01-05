@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    background-image: url(../images/303549.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/303549.jpg);
+    color: #fffefe;
+}
+
+.reveal { 
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.menu-logo-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Additional styles... */
+#reservations {
+    padding: 2rem;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0 0 1.5rem 0;
+}
+
+
+.home-link {
+    font-size: 25px;
+    color: #ffefef;
+    text-decoration: none;
+}
+.home-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    color: #1c7931;
+}
+
+.menu-header {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+header h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  border-left: 4px solid #1c7931;
+  padding-left: 15px;
+}
+
+.res-card {
+  display: flex;
+  background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent card */
+  backdrop-filter: blur(8px);      /* Blurs the wood background behind card */
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.res-card:hover {
+  transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+.res-image img {
+  width: 250px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.res-info {
+  padding: 25px;
+  flex-grow: 1;
+}
+
+.res-info h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #1c7931; /* Gold accent */
+}
+
+.res-info p {
+  margin: 8px 0;
+  opacity: 0.9;
+  font-size: 0.95rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #eea213; /* Green for anniversary */
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.badge.business {
+  background: #706c70; /* Blue for business */
+}
+
+.badge.business2 {
+    background: #1a13ee;
+}
+
+.btn-edit {
+  margin-top: 15px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-edit:hover {
+  background: white;
+  color: black;
+}
+

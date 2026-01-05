@@ -1,0 +1,51 @@
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+    #navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        padding: 1rem;
+    }
+    .home-link {
+        font-size: 17px;
+        margin-top: -15px;
+    }
+    section {
+        margin-bottom: 0;
+    }
+    .container {
+        padding: 20px;
+    }
+    .media-display {
+        display: none;
+    }
+    .menu-header {
+        font-size: 20px;
+    }
+    body {
+        font-family: Lato, sans-serif;
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/fried-chicken-mixed-with-vegetables.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #ffffff;
+        line-height: 1.6;
+        height: auto;
+        width: auto;
+    }
+    .login-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding-bottom: 3rem;
+    }
+    .log-in {
+        color: #929090;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+
+}

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAHU Eats</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+    <section id="navbar" class="the-navber">
+        <div class="nav-container">
+            <img src="images/Oahu Eats logo.png" width="100%" alt="OAHU Eats Logo" class="oahu-logo">
+
+            <div class="left-nav display-not">
+                <div class="menu-bar"><a href="#" onclick="location.href='../Menu'">Menu</a></div>
+                <div><a href="#" onclick="location.href='../Reservations'">Reservations</a></div>
+                <div><a href="#" onclick="location.href='../Menu'">Order Now</a></div>
+                <div><a href="#" onclick="href='#footer'">Contact Us</a></div>
+            </div>
+
+            <div class="right-nav display-not">
+                <div class="lct-bar">
+                     <button class="home-btn" onclick="location.href='#location'">Location</button>
+                </div>
+                <div><a href="#" onclick="location.href='Get Started & Join Club/index.html'">Join Club</a></div>
+            </div>
+        </div>
+
+        <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="./Menu/index.html" onclick="toggleMenu()">Menu</a></li>
+                    <li><a href="./Reservations/index.html" onclick="toggleMenu()">Reservations</a></li>
+                    <li><a href="./Menu/index.html" onclick="toggleMenu()">Order Now</a></li>
+                    <li><a href="https://wa.me/9068063228'" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div> 
+        </nav>
+
+    </section>
+
+   
+    
+
+    <section id="home">
+        <div class="home-text-container reveal breathe">
+            <h3 class="home-text-1">Discover the <span>Heart of Hawaii</span> with Every Bite</h3>
+            <p class="home-text-2">From our family to yours, we bring you a culinary journey infused with fresh, locally, sourced ingredients and authentic island recipes. Dive into our mouthwatering dishes, each crafted to deliver a true taste of paradise.</p>
+            <div class="btn-container">
+                <button class="home-phone-btn" onclick="location.href='https://wa.me/23778229'"><img src="images/app.png" width="3%" class="phone-img">+23(0)3778229</button>
+                <button class="home-btn home-btn-2" onclick="location.href='Get Started & Join Club/index.html'">Get Started</button>
+            </div>
+        </div>
+
+        <div class="reveal small-gap">
+            <img src="images/delicious-food-black-board_1-removebg-preview.png" alt="Delicious food" class="delicious-food" width="100%">
+        </div>
+    </section>
+
+    <div>
+        <img src="images/Frame_26949-removebg-preview.png" alt="Varieties of food card" class="varieties-of-food" width="100%">
+    </div>
+
+    <section class="popular-meal reveal">
+        <div>
+            <div class="popular-meal-title">Our Popular Meal</div>
+        </div>
+
+        <div class="meal-container">
+            <div class="meal-cards reveal">
+                <img src="images/fruit.png" alt="Popular meal 1" class="popular-meal-img" width="100%">
+                <div class="popular-meal-name">Haupia</div>
+
+                <div class="meal-text"><p>A classic Hawaiian dessert made from coconut milk, sugar, and cornstarch, resulting in a creamy, custard-like texture. </p></div>
+            </div>
+
+            <div class="meal-cards reveal">
+                <img src="images/creampie.png" alt="Popular meal 1" class="popular-meal-img" width="100%">
+                <div class="popular-meal-name">Spam Musubi</div>
+
+                <div class="meal-text"><p>A savory and portable snack consisting of a slice of grilled Spam on a bed of sushi rice, wrapped in nori seaweed.</p></div>
+            </div>
+
+            <div class="meal-cards reveal">
+                <img src="images/mixedfood.png" alt="Popular meal 1" class="popular-meal-img" width="100%">
+                <div class="popular-meal-name">Chicken Katsu</div>
+
+                <div class="meal-text"><p>Breaded and fried chicken cutlets served with a tangy katsu sauce. This dish combines crispy texture with a sweet and savory flavor.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-section reveal">
+        <div class="order-text-1">Wanna satisfy your cravings ?</div>
+        <div class="order-text-2">Order Oahu Eats <br> Now</div>
+        <div class="order-text-3">Get in few minutes</div>
+        <button class="home-btn" onclick="location.href='Menu/index.html'">Order Now</button>
+    </section>
+
+    <section id="location">
+        <div class="location-title">Where you can find us</div>
+
+        <div class="location-container reveal">
+            <div>
+                <div class="location-add-container">
+                    <div>
+                        <h5 class="location-add">Oahu Eats</h5>
+                        <h5 class="location-add-small">2808 W.Sepulveda Blvd.Torrance, CA 90505</h5>
+                        <h5 class="location-add-small">+234(0)8108943890</h5>
+                    </div>
+                    
+                    <div>
+                        <h5 class="location-add">Hours:</h5>
+                        <h5 class="location-add-small">Mon-Fri: 10am - 10pm</h5>
+                        <h5 class="location-add-small">Sat-Sun: 10am - 11pm</h5>
+                    </div>  
+                </div>
+
+                <div class="location-add-container">
+                    <div>
+                        <h5 class="location-add">Bakery & Cafe</h5>
+                        <h5 class="location-add-small">2808 W.Sepulveda Blvd.Torrance, CA 90505</h5>
+                        <h5 class="location-add-small">+234(0)8108943890</h5>
+                    </div>
+
+                     <div>
+                        <h5 class="location-add">Hours:</h5>
+                        <h5 class="location-add-small">Mon-Fri: 10am - 10pm</h5>
+                        <h5 class="location-add-small">Sat-Sun: 10am - 11pm</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <img src="images/map.png" alt="Map location" class="map-location" width="100%">
+            </div>
+        </div>
+    </section>
+
+    <section id="review">
+        <div class="location-title review-big-text">Hear from Our Happy Diners</div>
+        <div class="review-small-text">Join our community of happy customers today and experience the Oahu Eats difference for yourself!</div>
+
+        <div class="review-container reveal">
+            <div class="meal-cards">
+                <img src="images/woman.png" alt="customer image" class="review-customer-image" width="100%">
+                <div class="meal-text">Delicious Hawaiian food with a great atmosphere! The poke bowl was fresh, and the service was excellent. Highly recommend!"</div>
+
+                <div class="customer-name"><p>Olatunde Gbenga</p></div>
+                <div class="customer-occupation"><p>Technician</p></div>
+            </div>
+
+            <div class="meal-cards display-not">
+                <img src="images/man 1.png" alt="customer image" class="review-customer-image" width="100%">
+                <div class="meal-text">Delicious Hawaiian food with a great atmosphere! The poke bowl was fresh, and the service was excellent. Highly recommend!"</div>
+
+                <div class="customer-name"><p>Olatunde Gbenga</p></div>
+                <div class="customer-occupation"><p>Architect</p></div>
+            </div>
+
+            <div class="meal-cards display-not">
+                <img src="images/man 2.png" alt="customer image" class="review-customer-image" width="100%">
+                <div class="meal-text">Delicious Hawaiian food with a great atmosphere! The poke bowl was fresh, and the service was excellent. Highly recommend!"</div>
+
+                <div class="customer-name"><p>Olatunde Gbenga</p></div>
+                 <div class="customer-occupation"><p>Technician</p></div>
+            </div>
+        </div>
+
+        <button class="see-more reveal" onclick="location.href='Reviews/index.html'">More Reviews</button>
+    </section>
+
+    <section id="footer">
+        <img src="images/Frame 26970.png" alt="Footer image" width="100%" class="display-not">
+
+        <div class="  reveal">
+            <div class="footer-text-1">Subscribe To Our Newsletter</div>
+            <div class="footer-input-container">
+                <input type="text" placeholder="Enter your email address" class="footer-input">
+                <button class="home-btn footer-btn" onclick="location.href='https://mail.google.com/mail/u/0/#inbox'">Subscribe</button>
+            </div>
+           
+            <div class="footer-card-container">
+                <div class="first-footer-card">
+                    <img src="images/Oahu Eats logo.png" alt="Oahu Eats logo" class="footer-logo">
+                    <div class="footer-quote">“A Taste of Aloha in Every Bite”</div>
+                    <div class="footer-icons">
+                        <img src="images/app.png" alt="whatsapp icon" class="social-icon" width="20%" onclick="location.href='https://wa.me/23778229'">
+                        <img src="images/instagram (1).png" alt="Instagram icon" class="social-icon" width="20%" onclick="location.href='https://www.instagram.com'">
+                        <img src="images/communication (3).png" alt="Telegram icon" class="social-icon" width="20%" onclick="location.href='https://wwww.telegram.com'">
+                        <img src="images/facebook (1).png" alt="Facebook icon" class="social-icon" width="20%" onclick="location.href='https://www.facebook.com'">
+                    </div>
+                </div>
+
+                <div class="second-footer-card">
+                    <h5 class="footer-heading">Company</h5>
+                    <a href="#" class="footer-link" onclick="location.href='Company & Policies/index.html'"><h5>About Us</h5></a>
+                    <a href="#" class="footer-link" onclick="location.href='Company & Policies/index.html'"><h5>FAQs</h5></a>
+                </div>
+
+                <div class="third-footer-card">
+                    <h5 class="footer-heading">Privacy Policies</h5>
+                    <a href="#" class="footer-link" onclick="location.href='Company & Policies/index.html'"><h5>Terms of Service</h5></a>
+                    <a href="#" class="footer-link" onclick="location.href='Company & Policies/index.html'"><h5>Accessibility Statement</h5></a>
+                </div>
+
+                <div class="fourth-footer-card">
+                    <h5 class="footer-heading">Contact Us</h5>
+                    <h5 class="footer-link-small">2808 W.Sepulveda Blvd.Torrance, CA 90505</h5>
+                    <h5 class="footer-link-small">+234(0)8108943890</h5>
+                </div>
+            </div>
+
+            <div class="footer-rights">© 2024 Oahu Eats. All rights reserved.</div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* body animation */
+.reveal { 
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   padding: 5rem 5rem 0 5rem;
+}
+
+.home-link-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-size: 20px;
+}
+
+.home-link {
+    color: #000000;
+    text-decoration: none;
+}
+.home-link:hover {
+    color: #1c7931;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    transition: all 0.2s ease;
+}
+
+/* all page*/
+
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    background: linear-gradient(#cecece, #6b6b6b);
+    color: #000000;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 24px 0 24px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+    color: #1c7931;
+}
+
+p {
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+/* FAQ */
+.faq-item {
+    border-bottom: 1px solid #2a2a2a;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    color: #020101;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+    margin-top: 8px;
+}
+
+/* Terms & Policy */
+ul {
+    padding-left: 18px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid #222;
+    color: #000000;
+    font-size: 14px;
+}
+
+#about:hover, #faqs:hover, #terms:hover, #policy:hover {
+    cursor: pointer;
+    transform: scale(1.04);
+    transition: all 0.2s ease;
+}

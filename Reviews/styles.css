@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: auto;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: lato, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url(../images/fried-chicken-mixed-with-vegetables.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto;
+    transform: translateY(-25px);
+    height: auto;
+}
+
+/* body animation */
+.reveal { 
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.container {
+    padding: 5rem 10rem;
+}
+
+h1, p {
+    color: white;
+}
+
+/* Review Specific Styles */
+.review-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.overall-rating .score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #0d9349;
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.review-card {
+  background: rgba(242, 242, 242, 0.05);
+  backdrop-filter: blur(22px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  transform: scale(1.0);
+  color: #ffffff;
+}
+
+.review-card:hover {
+    transform: rotate(-3deg);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Quote icon decoration */
+.review-card::before {
+  content: '“';
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 4rem;
+  color: rgba(26, 234, 36, 0.2);
+  font-family: serif;
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #12f330;
+  object-fit: cover;
+}
+
+.reviewer-meta h4 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.stars {
+  color: #e8f312;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+}
+
+.review-text {
+  font-style: italic;
+  line-height: 1.6;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.review-date {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.home-link {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+.home-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    color: #1c7931;
+}
