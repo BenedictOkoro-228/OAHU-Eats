@@ -228,6 +228,7 @@
         height: 32px;
         opacity: 1;
         margin: 0 auto;
+        text-align: center;
     }
 
     #location {
