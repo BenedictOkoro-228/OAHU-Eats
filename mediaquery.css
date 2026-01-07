@@ -296,9 +296,10 @@
         opacity: 1;
         border-radius: 24px;
         transform: scale(0.9);
+        margin: 0 auto;
     }
     .map-location:hover {
-        transform: scale(1.02);
+        transform: scale(1.01);
         transition: all 0.3s ease-in-out;
         cursor: pointer;
     }
@@ -419,7 +420,7 @@
         align-items: center;
         margin: 1.5rem auto 0 auto;
         width: 310px;
-        padding: 0px 15px 0px 18px;
+        padding: 0px 13px 0px 18px;
         background: #ffffff;
         border-radius: 10px;
         transform: scale(1.0);
